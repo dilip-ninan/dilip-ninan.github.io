@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#more">More Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <header class="hero">
       <div class="hero__grid">
         <div>
@@ -29,7 +36,6 @@
           </div>
         </div>
         <aside class="quick-links">
-          <h2>Links</h2>
           <ul>
             <li><a href="https://scholar.google.com/citations?user=zx3glIEAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">Google Scholar</a></li>
             <li><a href="http://philpapers.org/profile/2730" target="_blank" rel="noreferrer">PhilPapers</a></li>
@@ -44,19 +50,19 @@
       <section id="about" class="panel">
         <h2>About</h2>
         <p>
-          I am a philosophy professor at Tufts University. Most of my research is in philosophy
+          I am a philosophy professor at <a href="http://as.tufts.edu/philosophy/" target="_blank" rel="noreferrer">Tufts University</a>. Most of my research is in the philosophy
           of language and formal semantics, but I am also interested in epistemology,
-          philosophy of mind, metaphysics, and philosophical logic.
+          the philosophy of mind, metaphysics, and philosophical logic.
         </p>
         <p>
-          I co-direct the Linguistics Minor at Tufts and teach courses including Semantics,
+          I co-direct the Linguistics Minor at Tufts and teach courses related to this, including Semantics,
           Philosophy of Language, and Modal Logic. I hold a BA from the University of Western
           Ontario, a BPhil from Oxford University, and a PhD from MIT.
         </p>
         <p>
-          From 2019 to 2024, I was Editor-in-Chief of Linguistics and Philosophy. During the
-          2020 to 2021 academic year, I was a fellow at the Paris Institute for Advanced Study.
-          Two articles were selected for inclusion in the Philosopher's Annual (2018 and 2024).
+          From 2019 to 2024, I was Editor-in-Chief of <i><a href="https://link.springer.com/journal/10988" target="_blank" rel="noreferrer">Linguistics and Philosophy</a></i>. During the
+          2020 to 2021 academic year, I was a fellow at the <a href="https://www.paris-iea.fr/en/" target="_blank" rel="noreferrer">Paris Institute for Advanced Study</a>.
+          Two of my articles have been selected for inclusion in the <i><a href="https://www.philosophersannual.org/" target="_blank" rel="noreferrer">Philosopher's Annual</a></i> (2018 and 2024).
         </p>
       </section>
 
@@ -214,6 +220,16 @@
             <a href="papers/propositions.pdf">local file</a>
           </li>
           <li>
+            Review of Robin Jeshion (ed.), <i>New Essays on Singular Thought</i>.<br />
+            2011. <i>Notre Dame Philosophical Reviews</i>.<br />
+            <a href="http://ndpr.nd.edu/news/26185-new-essays-on-singular-thought/" target="_blank" rel="noreferrer">link</a>
+          </li>
+          <li>
+            Review of Stephen Yablo, <i>Thoughts: Philosophical Papers Volume I</i>.<br />
+            2011. <i>Protosociology</i>.<br />
+            <a href="http://www.protosociology.de/Reviews/ProtoSociology-R-Ninan-Yablo.pdf" target="_blank" rel="noreferrer">link</a>
+          </li>
+          <li>
             <strong>Semantics and the Objects of Assertion</strong><br />
             2010. <i>Linguistics and Philosophy</i> 33(5): 355-380.<br />
             <a href="papers/semantics.pdf">local file</a>
@@ -227,6 +243,11 @@
             <strong>Persistence and the First-Person Perspective</strong><br />
             2009. <i>Philosophical Review</i> 118(4): 425-464.<br />
             <a href="papers/persistence.pdf">local file</a>
+          </li>
+          <li>
+            <strong>Two Puzzles About Deontic Necessity</strong><br />
+            2005. In <i>New Work on Modality</i>. <i>MIT Working Papers in Linguistics</i> 51: 149-178.<br />
+            <a href="papers/modals.pdf">local file</a>
           </li>
         </ol>
       </section>
@@ -254,13 +275,16 @@
 
       <section id="contact" class="panel contact">
         <h2>Contact</h2>
-        <p>111A Miner Hall, Tufts University, Medford, MA 02155, USA</p>
-        <p><a href="mailto:dilip.ninan@tufts.edu">dilip.ninan@tufts.edu</a></p>
-        <p><a href="tel:+16176272874">+1 (617) 627-2874</a></p>
+        <div class="contact-grid">
+          <p><span class="contact-label">Office</span>111A Miner Hall, Tufts University, Medford, MA 02155, USA</p>
+          <p><span class="contact-label">Email</span><a href="mailto:dilip.ninan@tufts.edu">dilip.ninan@tufts.edu</a></p>
+          <p><span class="contact-label">Phone</span><a href="tel:+16176272874">+1 (617) 627-2874</a></p>
+        </div>
       </section>
     </main>
 
     <footer>
+      <p class="updated">Last updated: <time id="last-updated"></time></p>
       <p>© <span id="year"></span> Dilip Ninan</p>
     </footer>
 
