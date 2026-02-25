@@ -10,3 +10,19 @@ if (lastUpdatedEl) {
   });
   lastUpdatedEl.textContent = formatted;
 }
+
+const setAnchorOffset = () => {
+  const nav = document.querySelector(".top-nav");
+  if (!nav) return;
+  const rect = nav.getBoundingClientRect();
+  const extraGap = 10;
+  const offset = Math.ceil(rect.bottom + extraGap);
+  document.documentElement.style.setProperty("--anchor-offset", `${offset}px`);
+};
+
+setAnchorOffset();
+window.addEventListener("resize", setAnchorOffset);
+window.addEventListener("load", setAnchorOffset);
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(setAnchorOffset);
+}
